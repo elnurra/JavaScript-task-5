@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/JS/index.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <section id="input">
+        <div class="container">
+            <div class="row-1">
+                <div class="col-3">
+                    <form action="">
+                        <input type="text" placeholder="Product Name" id="product-name">
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="">
+                        <input type="number" placeholder="Product Price $" id="product-price">
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="">
+                        <input type="number" placeholder="Product count" id="product-count">
+
+                    </form>
+                </div>
+                <div class="col-3">
+                    <form action="">
+                        <input type="text" placeholder="Category" id="product-category">
+                    </form>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="col-3">
+                    <i class="product-name">Product name is required*</i>
+                </div>
+                <div class="col-3">
+                    <i class="product-price">Product price is required*</i>
+                </div>
+                <div class="col-3">
+                    <i class="product-count">Product count is not required*</i>
+                </div>
+                <div class="col-3">
+                    <i class="product-category">Product category is required*</i>
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="add-product">
+                    <div class="apply">
+                        <form class="test-form">
+                            <button class="submit" type="submit">
+                                <h5>Apply</h5>
+                            </button>
+                    </div>
+                    </form>
+                    <div class="result">
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="table">
+        <div class="container">
+            <div class="row-1">
+                <div class="col-3">
+                    <input class="search-name" type="text" placeholder="Search by name">
+                </div>
+                <div class="col-3">
+                    <button class="sort-names" type="submit">AtoZ</button>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <input class="min-value" type="number" placeholder="Min">
+                        </div>
+                        <div class="col-6">
+                            <input class="max-value" type="number" placeholder="Max">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <select name="Category" class="selection">
+                        <option value="volvo">Default value</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="filter-names">
+                    <button class="filter" type="submit">Filter</button>
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="col-3-10">
+                    <h5>#</h5>
+                </div>
+                <div class="col-3">
+                    <h5>Product Name:</h5>
+                </div>
+                <div class="col-3">
+                    <h5>Product Category:</h5>
+                </div>
+                <div class="col-3">
+                    <h5>Product Price:</h5>
+                </div>
+                <div class="col-3">
+                    <h5>Product counts</h5>
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="col-3-1-1">
+
+                </div>
+                <div class="col-3-1">
+                </div>
+                <div class="col-3-2">
+                </div>
+                <div class="col-3-3">
+                </div>
+                <div class="col-3-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -16,7 +16,7 @@ inputName.addEventListener("keyup", () => {
   } else if (
     inputName.value.trim().length > 0 &&
     !Number(inputName.value.trim()) &&
-    // inputName.value[0] === strName.toUpperCase() &&
+    inputName.value[0] === strName.toUpperCase().trim() &&
     !Number(inputName.value[0])
   ) {
     resultInputName.innerHTML = "<p>Correct</p>";
@@ -84,7 +84,7 @@ inputCategory.addEventListener("keyup", () => {
   } else if (
     inputCategory.value.trim().length > 0 &&
     !Number(inputCategory.value.trim()) &&
-    inputCategory.value[0] === strCategory &&
+    inputCategory.value[0] === strCategory.toUpperCase().trim() &&
     !Number(inputCategory.value[0])
   ) {
     resultInputCategory.innerHTML = "<p>Correct</p>";
@@ -106,6 +106,7 @@ const tableResult1 = document.querySelector(".col-3-1");
 const tableResult2 = document.querySelector(".col-3-2");
 const tableResult3 = document.querySelector(".col-3-3");
 const tableResult4 = document.querySelector(".col-3-4");
+const addValue = document.querySelector(".selection");
 const infoProduct = [];
 
 let count = 0;
@@ -118,6 +119,7 @@ buttonApply.addEventListener("click", (element) => {
     countTable.innerHTML += `${count} <br />`;
     tableResult1.innerHTML += `${aboutInput.name}<br />`;
     tableResult2.innerHTML += `${aboutInput.category}<br />`;
+    addValue.innerHTML += `<option class="${aboutInput.category}">${aboutInput.category}</option> <br />`;
     tableResult3.innerHTML += `${aboutInput.price}<br />`;
     tableResult4.innerHTML += `${aboutInput.count}<br />`;
     count++;
